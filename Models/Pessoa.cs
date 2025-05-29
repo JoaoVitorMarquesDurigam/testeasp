@@ -8,9 +8,9 @@ namespace teste1.Models
          O set permite definir ou modificar o valor de um atributo */
         [Display (Name = "Código do Cliente")]
         public int PessoaId { get; set; }
-        [Display (Name = "Nome do Clienta")]
+        [Display (Name = "Nome do Cliente")]
         public string? Nome { get; set; }
-
+        [EmailAddress(ErrorMessage = "Endereço de Email Inválido")]
         public string? Email { get; set; }
     }
 }
